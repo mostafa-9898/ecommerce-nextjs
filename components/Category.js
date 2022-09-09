@@ -30,7 +30,7 @@ const Category = () => {
                         flexDirection: 'column', alignItems: 'center', justifyContent: 'center'
                     }}>
                         <Typography variant='h6' component='h3' color='white'>
-                            men's clothing
+                            mens clothing
                         </Typography>
                         <Link href='/products'>
                             <Button variant='outlined' color='secondary'>
@@ -65,7 +65,7 @@ const Category = () => {
                         backgroundColor: 'rgba(0, 0, 0, 0.4)', display: 'flex', gap: '30px', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'
                     }}>
                         <Typography variant='h6' component='h3' color='white'>
-                            women's clothing
+                            womens clothing
                         </Typography>
                         <Link href='/products'>
                             <Button variant='outlined' color='secondary'>

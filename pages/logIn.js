@@ -62,7 +62,7 @@ const LogIn = () => {
 
                         <Typography variant='body2' component='h3'
                             sx={{ color: 'gray' }}>
-                            Don't have account ?
+                            Dont have account ?
                             <Link href='/signUp'>
                                 <a style={{ marginLeft: '7px', color: '#48cae4', textDecoration: 'none' }} >
                                     Sign up

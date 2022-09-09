@@ -38,14 +38,14 @@ const Sidebar = ({ products, setDynamicState }) => {
                         onChange={(event) => setValue(event.target.value)}
                     >
                         <MenuItem value="all">All</MenuItem>
-                        <MenuItem value="men's clothing">Men's clothing</MenuItem>
-                        <MenuItem value="women's clothing">Women's clothing</MenuItem>
+                        <MenuItem value="men's clothing">Mens clothing</MenuItem>
+                        <MenuItem value="women's clothing">Womens clothing</MenuItem>
                         <MenuItem value="jewelery">Jewelery</MenuItem>
                         <MenuItem value="electronics">Electronics</MenuItem>
                     </Select>
                 </FormControl>
 
-                
+
                 :
 
 
