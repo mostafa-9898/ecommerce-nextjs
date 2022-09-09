@@ -14,7 +14,7 @@ import '../styles/globals.css'
 
 // redux
 import { Provider } from 'react-redux'
-import Store from '../redux/Store'
+import Store from '../redux/store'
 
 // progressbar
 import NextNProgress from "nextjs-progressbar";
