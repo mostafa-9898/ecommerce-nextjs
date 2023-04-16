@@ -3,7 +3,7 @@
 import { Button, Typography } from "@mui/material";
 
 // icons
-import { HiOutlineArrowRight } from 'react-icons/Hi';
+import { HiOutlineArrowRight } from '/react-icons/Hi';
 
 function MyBtn({ href, textContent }) {
     return (

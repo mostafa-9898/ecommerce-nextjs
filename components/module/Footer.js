@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 // elements
@@ -7,14 +8,13 @@ import Logo from "../elements/Logo";
 import { Box, Button, IconButton, Tooltip, Typography } from "@mui/material";
 
 // icons
-import { BsGooglePlay } from 'react-icons/Bs';
-import { FaAppStoreIos, FaGithub } from 'react-icons/Fa';
+import { BsGooglePlay } from '/react-icons/Bs';
+import { FaAppStoreIos, FaGithub } from '/react-icons/Fa';
 
 // payment method svg
 import paypal from '../../public/svg/paypal.svg'
 import visa from '../../public/svg/visa.svg'
 import mastercard from '../../public/svg/mastercard.svg'
-import Link from "next/link";
 
 const Footer = () => {
 

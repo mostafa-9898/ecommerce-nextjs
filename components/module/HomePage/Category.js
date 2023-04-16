@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 // elements
@@ -5,7 +6,6 @@ import { MyBtn } from "../../elements/MyBtn";
 
 // mui
 import { Box, Typography } from "@mui/material";
-import Link from "next/link";
 
 function Category() {
 

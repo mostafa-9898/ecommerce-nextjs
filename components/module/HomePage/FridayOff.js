@@ -3,7 +3,7 @@ import Image from "next/image";
 // mui
 import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
-import { HiOutlineArrowRight } from "react-icons/Hi";
+import { HiOutlineArrowRight } from "/react-icons/Hi";
 
 function FridayOff() {
     return (

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Box, Button, Typography } from '@mui/material';
 
 // icons
-import { HiOutlineArrowRight } from 'react-icons/Hi';
+import { HiOutlineArrowRight } from '/react-icons/Hi';
 
 function Header() {
     return (
