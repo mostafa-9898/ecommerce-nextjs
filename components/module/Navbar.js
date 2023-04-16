@@ -14,7 +14,7 @@ import {
     HiOutlineSun, HiOutlineShoppingBag, HiOutlineTag, HiOutlineUser,
     HiOutlineMoon, HiOutlineAnnotation, HiOutlineHome,
     HiOutlineInformationCircle, HiOutlineMenuAlt2,
-} from '/react-icons/Hi';
+} from 'react-icons/hi';
 
 // mui
 import {

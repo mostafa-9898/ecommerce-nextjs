@@ -8,8 +8,8 @@ import Logo from "../elements/Logo";
 import { Box, Button, IconButton, Tooltip, Typography } from "@mui/material";
 
 // icons
-import { BsGooglePlay } from '/react-icons/Bs';
-import { FaAppStoreIos, FaGithub } from '/react-icons/Fa';
+import { BsGooglePlay } from 'react-icons/bs';
+import { FaAppStoreIos, FaGithub } from 'react-icons/fa';
 
 // payment method svg
 import paypal from '../../public/svg/paypal.svg'
