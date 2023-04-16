@@ -65,7 +65,7 @@ function Category() {
                         fontWeight: "700", fontSize: { xs: "20px", md: "35px", xl: "45px" },
                         mb: { xs: "8px", md: "10px", xl: "15px" }
                     }}>
-                        Men's Clothes
+                        Men&apos;s Clothes
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
@@ -73,7 +73,7 @@ function Category() {
                         mb: { xs: "15px", md: "30px", xl: "30px" },
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a
                         type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged It was popularised
@@ -113,7 +113,7 @@ function Category() {
                         fontWeight: "700", fontSize: { xs: "20px", md: "35px", xl: "45px" },
                         mb: { xs: "8px", md: "10px", xl: "15px" }
                     }}>
-                        Women's Clothes
+                        Women&apos;s Clothes
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
@@ -121,7 +121,7 @@ function Category() {
                         mb: { xs: "15px", md: "30px", xl: "30px" },
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a
                         type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged It was popularised
@@ -183,7 +183,7 @@ function Category() {
                         mb: { xs: "15px", md: "30px", xl: "30px" },
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a
                         type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged It was popularised
@@ -230,7 +230,7 @@ function Category() {
                         mb: { xs: "15px", md: "30px", xl: "30px" },
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a
                         type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged It was popularised
