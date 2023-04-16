@@ -23,7 +23,7 @@ function MyBtn({ href, textContent }) {
                     {textContent || "Shop now"}
                 </Typography>
 
-                <HiOutlineArrowRight color="white" />
+                <><HiOutlineArrowRight color="white" /></>
 
             </Button>
         </a>

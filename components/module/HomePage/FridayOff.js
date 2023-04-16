@@ -3,7 +3,6 @@ import Image from "next/image";
 // mui
 import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
-import { MyBtn } from "../../elements/MyBtn";
 import { HiOutlineArrowRight } from "react-icons/Hi";
 
 function FridayOff() {
@@ -66,7 +65,7 @@ function FridayOff() {
                             >
                                 Grab it now
                             </Typography>
-                            <HiOutlineArrowRight color="white" />
+                            <><HiOutlineArrowRight color="white" /></>
                         </Button>
                     </Link>
                 </Box>

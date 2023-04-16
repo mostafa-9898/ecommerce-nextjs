@@ -48,7 +48,7 @@ function Header() {
                                 Shop Now
                             </Typography>
 
-                            <HiOutlineArrowRight color="white" fontSize={16} />
+                            <><HiOutlineArrowRight color="white" fontSize={16} /></>
 
                         </Button>
                     </Link>

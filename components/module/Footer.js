@@ -143,7 +143,9 @@ const Footer = () => {
                         {/* app store */}
                         <Button variant="contained" color="button">
 
-                            <FaAppStoreIos style={{ marginRight: '10px', fontSize: "17px", color: "white" }} />
+                            <>
+                                <FaAppStoreIos style={{ marginRight: '10px', fontSize: "17px", color: "white" }} />
+                            </>
 
                             <Typography variant='body1' color='white'
                                 fontSize={{ xs: "8.5px", md: "12px" }}
@@ -158,7 +160,9 @@ const Footer = () => {
                             sx={{ fontSize: { xs: "8.5px", md: "11px" } }}
                         >
 
-                            <BsGooglePlay style={{ marginRight: '10px', fontSize: "16px", color: "white" }} />
+                            <>
+                                <BsGooglePlay style={{ marginRight: '10px', fontSize: "16px", color: "white" }} />
+                            </>
 
                             <Typography variant='body1' color='white'
                                 fontSize={{ xs: "8.5px", md: "12px" }}
@@ -201,7 +205,9 @@ const Footer = () => {
                     <a target="_blank">
                         <Tooltip title='github'>
                             <IconButton color='primary'>
-                                <FaGithub color="#495057" />
+                                <>
+                                    <FaGithub color="#495057" />
+                                </>
                             </IconButton>
                         </Tooltip>
                     </a>
