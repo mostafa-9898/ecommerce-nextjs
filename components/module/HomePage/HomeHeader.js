@@ -6,12 +6,12 @@ import { Box, Button, Typography } from '@mui/material';
 // icons
 import { HiOutlineArrowRight } from 'react-icons/hi';
 
-function Header() {
+function HomeHeader() {
     return (
         <Box>
 
             <Box sx={{
-                backgroundImage: `url("/LandingPageee.jpg")`,
+                backgroundImage: `url("/pictures/LandingPage.jpg")`,
                 height: { xl: "800px", md: "700px", xs: "400px" },
                 width: "100%", backgroundRepeat: "no-repeat",
                 backgroundSize: "cover", position: "relative",
@@ -48,7 +48,7 @@ function Header() {
                                 Shop Now
                             </Typography>
 
-                            <><HiOutlineArrowRight color="white" fontSize={16} /></>
+                            <HiOutlineArrowRight color="white" fontSize={16} />
 
                         </Button>
                     </Link>
@@ -60,4 +60,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default HomeHeader;

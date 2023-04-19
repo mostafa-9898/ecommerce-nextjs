@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import '../styles/globals.css'
 
 // mui for backgraound
 import { Box, Container, Paper } from '@mui/material'
@@ -7,10 +8,9 @@ import { Box, Container, Paper } from '@mui/material'
 import { ColorContextProvider } from '../theme/MUI_MODE'
 
 // components
-import Footer from '../components/module/Footer'
-import Navbar from '../components/module/Navbar'
-import ScrollToTop from '../components/ScrollToTop'
-import '../styles/globals.css'
+import Footer from '../components/module/Footer';
+import Navbar from '../components/module/Navbar';
+import ScrollToTop from '../components/elements/ScrollToTop'
 
 // redux
 import { Provider } from 'react-redux'
@@ -18,8 +18,17 @@ import Store from '../redux/store'
 
 // progressbar
 import NextNProgress from "nextjs-progressbar";
+import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
+
+  const [hasWindow, setHasWindow] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setHasWindow(true)
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -31,20 +40,23 @@ function MyApp({ Component, pageProps }) {
       <ColorContextProvider>
         <Provider store={Store}>
 
-          <Paper variant='elevation'
-            sx={{ boxShadow: 'none', borderRadius: '0', border: 'none', p: '0px', m: "0px" }}>
-            <NextNProgress
-              color="#29D"
-              startPosition={0.3}
-              stopDelayMs={200}
-              height={3}
-              showOnShallow={true}
-            />
-            <Navbar />
-            <Component {...pageProps} />
-            <Footer />
-            <ScrollToTop />
-          </Paper>
+          {hasWindow &&
+            <Paper variant='elevation'
+              sx={{ boxShadow: 'none', borderRadius: '0', border: 'none', p: '0px', m: "0px" }}>
+              <NextNProgress
+                color="#29D"
+                startPosition={0.3}
+                stopDelayMs={200}
+                height={3}
+                showOnShallow={true}
+              />
+              <Navbar />
+              <Component {...pageProps} />
+              <Footer />
+              <ScrollToTop />
+            </Paper>
+          }
+
 
         </Provider>
       </ColorContextProvider>

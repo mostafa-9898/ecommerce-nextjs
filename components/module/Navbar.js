@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
@@ -31,14 +31,6 @@ const Navbar = () => {
 
     // redux
     const state = useSelector(state => state);
-
-    const [hasWindow, setHasWindow] = useState(false);
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setHasWindow(true)
-        }
-    }, []);
-
 
     return (
         <Box sx={{
@@ -78,7 +70,7 @@ const Navbar = () => {
                     <Link href='/cart'>
                         <Tooltip title='cart'>
                             <IconButton color="primary" sx={{ px: '12px' }}>
-                                <Badge badgeContent={hasWindow && state.itemsCounter} color="navCart"
+                                <Badge badgeContent={state.itemsCounter} color="navCart"
                                     sx={{
                                         "& .MuiBadge-badge": {
                                             fontWeight: "600", color: "#EEEEEE"
@@ -142,6 +134,7 @@ function DesktopMenu({ router }) {
                         sx={{
                             borderBottom: `${router.asPath === '/' && "2px solid #998e76"}`,
                             cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" },
+                            transition: 'all .15s linear'
                         }}
                     >
                         Home
@@ -152,7 +145,8 @@ function DesktopMenu({ router }) {
                     <Typography variant="subtitle1" color="primary" fontWeight={600}
                         sx={{
                             borderBottom: `${router.asPath === '/products' && "2px solid #998e76"}`,
-                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" }
+                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" },
+                            transition: 'all .15s linear'
                         }}
                     >
                         Products
@@ -163,7 +157,8 @@ function DesktopMenu({ router }) {
                     <Typography variant="subtitle1" color="primary" fontWeight={600}
                         sx={{
                             borderBottom: `${router.asPath === '/aboutUs' && "2px solid #998e76"}`,
-                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" }
+                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" },
+                            transition: 'all .15s linear'
                         }}
                     >
                         About us
@@ -174,7 +169,8 @@ function DesktopMenu({ router }) {
                     <Typography variant="subtitle1" color="primary" fontWeight={600}
                         sx={{
                             borderBottom: `${router.asPath === '/contactUs' && "2px solid #998e76"}`,
-                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" }
+                            cursor: "pointer", px: "6px", ":hover": { color: "#B2B2B2" },
+                            transition: 'all .15s linear'
                         }}
                     >
                         Contact us

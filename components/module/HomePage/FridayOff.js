@@ -51,7 +51,7 @@ function FridayOff() {
                             fontSize: { xs: "25px", md: "35px", xl: "30px" }
                         }}
                     >
-                        35% off only yhis friday and get special gift !
+                        50% off only yhis friday and get special gift !
                     </Typography>
 
                     <Link href='/products'>

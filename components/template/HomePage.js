@@ -2,7 +2,8 @@
 import Brands from "../module/HomePage/Brands";
 import Category from "../module/HomePage/Category";
 import FridayOff from "../module/HomePage/FridayOff";
-import Header from "../module/HomePage/Header";
+import HomeHeader from "../module/HomePage/HomeHeader";
+import JoinUs from "../module/HomePage/JoinUs";
 import WeOffer from "../module/HomePage/WeOffer";
 
 // mui
@@ -13,11 +14,12 @@ function HomePage() {
     return (
         <Box>
 
-            <Header />
+            <HomeHeader />
             <Brands />
             <WeOffer />
             <Category />
             <FridayOff />
+            <JoinUs />
 
         </Box>
     );

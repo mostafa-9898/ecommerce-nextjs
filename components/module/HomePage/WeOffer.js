@@ -1,11 +1,5 @@
 import Image from "next/image";
 
-// svg icons
-import smiling from '../../../public/svg/smiling.svg'
-import openBox from '../../../public/svg/box.svg'
-import delivery from '../../../public/svg/delivery.svg'
-import dollar from '../../../public/svg/dollar.svg'
-
 // mui
 import { Box, Grid, Typography } from "@mui/material";
 
@@ -15,28 +9,28 @@ function WeOffer() {
         {
             id: 1,
             name: "dollar",
-            picutre: dollar,
+            path: "/svg/dollar.svg",
             title: "Orginal Products",
             descriptions: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         },
         {
             id: 2,
             name: "smiling",
-            picutre: smiling,
+            path: "/svg/smiling.svg",
             title: "Satisfaction Guarantee",
             descriptions: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         },
         {
             id: 3,
             name: "openBox",
-            picutre: openBox,
+            path: "/svg/box.svg",
             title: "New Arrival Everyday",
             descriptions: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         },
         {
             id: 4,
             name: "delivery",
-            picutre: delivery,
+            path: "/svg/delivery.svg",
             title: "Fast & Free Shipping",
             descriptions: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         },
@@ -45,7 +39,8 @@ function WeOffer() {
 
     return (
         <Box sx={{
-            maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "40px" }, my: "50px",
+            maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "40px" },
+            mt: { xs: "0px", md: "100px" }
         }}>
 
 
@@ -96,24 +91,25 @@ function WeOffer() {
                     <Grid item xs={12} md={6} xl={3} key={item.id}>
 
                         <Box key={item.id} sx={{
-                            borderRadius: "15px", p: "15px", transition: "0.5s",
+                            borderRadius: "15px", p: "15px",
                             width: { xs: "320px", md: "295", xl: "210px", xxl: "300px" },
-                            boxShadow: "1px 1px 10px #f3f3f3, -1px -1px 10px #f7f7f7",
-                        }}
-                        >
+                            boxShadow: "5px 5px 10px #f3f3f3, -5px -5px 10px #f7f7f7",
+                        }}>
 
                             {/* picture */}
                             <Box sx={{
-                                width: "50px", height: "50px", borderRadius: "5px", backgroundColor: "#ced4da",
-                                display: "flex", alignItems: "center", justifyContent: "center", mb: "10px"
+                                width: "50px", height: "50px", borderRadius: "5px",
+                                backgroundColor: "#ced4da",
+                                display: "flex", alignItems: "center",
+                                justifyContent: "center", mb: "10px"
                             }}>
-                                <Image src={item.picutre} alt={item.name} width={25} height={25} />
+                                <Image src={item.path} alt={item.name} width={25} height={25} />
                             </Box>
 
                             {/* title */}
                             <Box mb="2px">
                                 <Typography variant="body1" component="h4"
-                                    fontWeight={600}
+                                    fontWeight={600} sx={{ cursor: "default" }}
                                 >
                                     {item.title}
                                 </Typography>
@@ -122,7 +118,7 @@ function WeOffer() {
                             {/* descriptions */}
                             <Box>
                                 <Typography variant="grayText" component="p"
-                                    fontSize={12}
+                                    fontSize={12} sx={{ cursor: "default" }}
                                 >
                                     {item.descriptions}
                                 </Typography>

@@ -11,7 +11,7 @@ function Category() {
 
     return (
         <Box sx={{
-            mt: "100px",
+            mt: { xs: "80px", md: "100px" },
             maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "50px" },
         }}>
 
@@ -26,7 +26,7 @@ function Category() {
                         borderBottom: "1px solid #6c757d", fontWeight: "600", pb: "15px",
                         fontSize: { xs: "25px", md: "35px" }, width: { xs: "270px", md: "450px" }
                     }}>
-                        Category of products
+                        Explore collections
                     </Typography>
 
                 </Box>
@@ -38,19 +38,22 @@ function Category() {
             {/* Men Clothes */}
             <Box sx={{
                 display: "flex", flexDirection: { xs: "column", md: "row" },
-                justifyContent: { xs: "center", xl: "space-evenly" }, alignItems: "center",
+                justifyContent: { xs: "center", xl: "space-evenly" },
+                alignItems: "center",
                 gap: { xs: "20px", md: "20px", xl: "50px" },
             }}>
 
                 {/* picture for mobiles and tablets */}
                 <Box display={{ xs: "block", md: "none" }}>
-                    <Image src="/category/MenClothes.jpg" alt="Men-Clothes" width="370px" height="500px"
+                    <Image src="/category/MenClothes.jpg"
+                        alt="Men-Clothes" width="370px" height="500px"
                         style={{ borderRadius: "10px" }}
                     />
                 </Box>
                 {/* picture for Desktops */}
                 <Box display={{ xs: "none", md: "block" }}>
-                    <Image src="/category/MenClothes.jpg" alt="Men-Clothes" width="450px" height="600px"
+                    <Image src="/category/MenClothes.jpg" alt="Men-Clothes"
+                        width="450px" height="600px"
                         style={{ borderRadius: "10px" }}
                     />
                 </Box>
@@ -69,8 +72,10 @@ function Category() {
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
-                        fontSize: { xs: "11px", md: "12px", xl: "14px" },
                         mb: { xs: "15px", md: "30px", xl: "30px" },
+                        fontSize: { xs: "11px", md: "12px", xl: "13px" },
+                        wordSpacing: "2px", lineHeight: "21px", textAlign: "justify",
+                        fontWeight: "600",
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -117,8 +122,10 @@ function Category() {
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
-                        fontSize: { xs: "11px", md: "15px", xl: "14px" },
                         mb: { xs: "15px", md: "30px", xl: "30px" },
+                        fontSize: { xs: "11px", md: "12px", xl: "13px" },
+                        wordSpacing: "2px", lineHeight: "21px", textAlign: "justify",
+                        fontWeight: "600",
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -161,7 +168,8 @@ function Category() {
                 </Box>
                 {/* picture for Desktops */}
                 <Box display={{ xs: "none", md: "block" }}>
-                    <Image src="/category/electronics.jpg" alt="Men-Clothes" width="520px" height="600px"
+                    <Image src="/category/electronics.jpg" alt="Men-Clothes"
+                        width="470px" height="590px"
                         style={{ borderRadius: "10px" }}
                     />
                 </Box>
@@ -179,8 +187,10 @@ function Category() {
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
-                        fontSize: { xs: "11px", md: "15px", xl: "14px" },
                         mb: { xs: "15px", md: "30px", xl: "30px" },
+                        fontSize: { xs: "11px", md: "12px", xl: "13px" },
+                        wordSpacing: "2px", lineHeight: "21px", textAlign: "justify",
+                        fontWeight: "600",
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -199,7 +209,7 @@ function Category() {
 
             </Box>
 
-            {/* Jewelry */}
+            {/* Jewellry */}
             <Box sx={{
                 display: "flex", flexDirection: { xs: "column", md: "row" },
                 justifyContent: { xs: "center", xl: "space-evenly" }, alignItems: "center",
@@ -208,7 +218,8 @@ function Category() {
 
                 {/* picture for mobiles and tablets */}
                 <Box display={{ xs: "block", md: "none" }}>
-                    <Image src="/category/Jewelry.jpg" alt="Men-Clothes" width="370px" height="460px"
+                    <Image src="/category/Jewelry.jpg" alt="Men-Clothes"
+                        width="370px" height="460px"
                         style={{ borderRadius: "10px" }}
                     />
                 </Box>
@@ -222,12 +233,14 @@ function Category() {
                         fontWeight: "700", fontSize: { xs: "20px", md: "35px", xl: "45px" },
                         mb: { xs: "8px", md: "10px", xl: "15px" }
                     }}>
-                        Jewelry
+                        Jewellry
                     </Typography>
 
                     <Typography variant="grayText" component="p" sx={{
-                        fontSize: { xs: "11px", md: "15px", xl: "14px" },
                         mb: { xs: "15px", md: "30px", xl: "30px" },
+                        fontSize: { xs: "11px", md: "12px", xl: "13px" },
+                        wordSpacing: "2px", lineHeight: "21px", textAlign: "justify",
+                        fontWeight: "600",
                     }}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -247,7 +260,8 @@ function Category() {
 
                 {/* picture for Desktops */}
                 <Box display={{ xs: "none", md: "block" }}>
-                    <Image src="/category/Jewelry.jpg" alt="Men-Clothes" width="520px" height="600px"
+                    <Image src="/category/Jewelry.jpg" alt="Men-Clothes"
+                        width="450px" height="600px"
                         style={{ borderRadius: "10px" }}
                     />
                 </Box>

@@ -21,12 +21,12 @@ const Footer = () => {
     return (
         <Box sx={{
             maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "40px" },
-            mt: "100px", mb: "10px"
+            mt: "120px", pb: "10px"
         }}>
 
             {/* footer */}
             <Box sx={{
-                display: 'flex', flexWrap: "wrap", pb: "25px",
+                display: 'flex', flexWrap: "wrap", pb: "50px",
                 alignItems: "start", justifyContent: { xl: "space-between" }, gap: "30px",
                 borderBottom: "1px solid #d3d3d3",
             }}>
@@ -206,7 +206,7 @@ const Footer = () => {
                         <Tooltip title='github'>
                             <IconButton color='primary'>
                                 <>
-                                    <FaGithub color="#495057" />
+                                    <FaGithub />
                                 </>
                             </IconButton>
                         </Tooltip>
