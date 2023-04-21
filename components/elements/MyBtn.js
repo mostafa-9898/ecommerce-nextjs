@@ -10,20 +10,20 @@ function MyBtn({ href, textContent }) {
         <a href={href}
             style={{ textDecoration: "none" }}
         >
-            <Button variant='contained' color='button'
-                sx={{
-                    width: { xs: "100px", md: "110px", xl: "130px" },
-                    height: { xs: "32px", md: "37px", xl: "42px" }
-                }}>
+            <Button variant='contained' color='button' sx={{
+                width: { xs: "100px", md: "120px", xl: "130px" },
+                height: { xs: "32px", md: "37px", xl: "40px" },
+            }}>
 
-                <Typography variant='subtitle1' color='white'
-                    fontWeight={500} fontSize={{ xs: "10px", md: "13px" }}
-                    mr="5px"
-                >
+                <Typography variant='subtitle1' sx={{
+                    color: 'white', fontWeight: "500",
+                    mr: { xs: "4px", md: "5px", xl: "7px" },
+                    fontSize: { xs: "11px", xl: "12px" },
+                }}>
                     {textContent || "Shop now"}
                 </Typography>
 
-                <><HiOutlineArrowRight color="white" /></>
+                <HiOutlineArrowRight color="white" fontSize={13} />
 
             </Button>
         </a>

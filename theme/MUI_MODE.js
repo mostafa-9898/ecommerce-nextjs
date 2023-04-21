@@ -23,8 +23,7 @@ export const ColorContextProvider = ({ children }) => {
                 sm: 450,
                 md: 600,
                 lg: 900,
-                xl: 1024,
-                xxl: 1200
+                xl: 1050,
             }
         },
         typography: {

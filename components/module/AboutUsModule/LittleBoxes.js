@@ -16,15 +16,16 @@ function LittleBoxes() {
 
     return (
         <Box sx={{
-            mt: { xs: "70px", md: "100px" }
+            mt: "50px"
         }}>
 
             {/* title */}
             <Typography variant="h3"
                 sx={{
                     fontWeight: "600", mb: '40px',
-                    fontSize: { xs: "25px", md: "35px" }, pb: "10px",
-                    borderBottom: "1px solid #6c757d", width: { xs: "230px", md: "400px" },
+                    fontSize: { xs: "22px", md: "32px" }, pb: "10px",
+                    borderBottom: "1px solid #6c757d",
+                    width: { xs: "220px", md: "300px" },
                 }}>
                 You should know
             </Typography>
@@ -34,7 +35,8 @@ function LittleBoxes() {
             {/* boxes */}
             <Box sx={{
                 display: 'flex', alignItems: 'center',
-                flexDirection: 'row', flexWrap: 'wrap', gap: '30px',
+                flexDirection: 'row', flexWrap: 'wrap',
+                gap: { xs: "30px", md: "50px", xl: "30px" },
                 justifyContent: "space-evenly",
             }}>
 
@@ -42,13 +44,13 @@ function LittleBoxes() {
                 {boxContents.map(item =>
 
                     <Box key={item.title} sx={{
-                        p: { xs: "15px", md: "25px" }, textAlign: 'center',
+                        p: { xs: "15px", md: "24px" }, textAlign: 'center',
                         boxShadow: "5px 5px 10px #f3f3f3, -5px -5px 10px #f7f7f7",
                         borderRadius: "15px"
                     }}>
 
                         <Box sx={{
-                            width: { xs: "100px", md: "130px" }, pb: "10px"
+                            width: { xs: "100px", md: "120px" }, pb: "10px"
                         }}>
                             <Image src={item.img} alt='pic' width='130px' height='110px' />
                         </Box>

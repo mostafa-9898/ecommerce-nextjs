@@ -21,19 +21,19 @@ const Footer = () => {
     return (
         <Box sx={{
             maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "40px" },
-            mt: "120px", pb: "10px"
+            mt: { xs: "100px", md: "120px" }, pb: "10px",
         }}>
 
             {/* footer */}
             <Box sx={{
-                display: 'flex', flexWrap: "wrap", pb: "50px",
-                alignItems: "start", justifyContent: { xl: "space-between" }, gap: "30px",
+                display: 'flex', pb: "50px", flexWrap: { xs: "wrap", xl: "nowrap" },
+                alignItems: "start", justifyContent: { xl: "space-between" }, gap: "50px",
                 borderBottom: "1px solid #d3d3d3",
             }}>
 
                 {/* logo and descriptions */}
                 <Box sx={{
-                    width: { xs: "290px", xl: "390px" },
+                    width: { xs: "350px", xl: "390px" },
                 }}>
 
                     {/* Logo */}
@@ -41,9 +41,10 @@ const Footer = () => {
 
                     {/* descriptions */}
                     <Box sx={{ mt: "10px" }}>
-                        <Typography variant="grayText"
-                            fontSize={12}
-                        >
+                        <Typography variant="grayText" component="p" sx={{
+                            fontSize: { xs: "10.5px", md: "12px", xl: "12.5px" },
+                            fontWeight: "500", lineHeight: "20px",
+                        }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </Typography>
@@ -58,29 +59,31 @@ const Footer = () => {
                 }}>
 
                     {/* colume 1 */}
-                    <Box display='flex' flexDirection='column' gap='9px'>
+                    <Box sx={{
+                        display: 'flex', flexDirection: 'column', gap: '9px',
+                    }}>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             Privacy Policy
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             Contact Us
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             About Us
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             affiliates
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             FAQs
                         </Typography>
@@ -89,22 +92,22 @@ const Footer = () => {
                     {/* colume 2 */}
                     <Box display='flex' flexDirection='column' gap='9px'>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             Delivery Information
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             Terms & Conditions
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             Track My Order
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "13px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "13px" } }}
                         >
                             My Wishlist
                         </Typography>
@@ -113,17 +116,17 @@ const Footer = () => {
                     {/* colume 3 */}
                     <Box display='flex' flexDirection='column' gap='9px'>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "14px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "14px" } }}
                         >
                             My Account
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "14px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "14px" } }}
                         >
                             View Cart
                         </Typography>
                         <Typography variant="body2" fontWeight={600}
-                            sx={{ cursor: "pointer", fontSize: { xs: "9.5px", md: "14px" } }}
+                            sx={{ cursor: "pointer", fontSize: { xs: "11px", md: "14px" } }}
                         >
                             Help
                         </Typography>
@@ -143,12 +146,12 @@ const Footer = () => {
                         {/* app store */}
                         <Button variant="contained" color="button">
 
-                            <>
-                                <FaAppStoreIos style={{ marginRight: '10px', fontSize: "17px", color: "white" }} />
-                            </>
+                            <FaAppStoreIos style={{
+                                marginRight: '7px', fontSize: "17px", color: "white"
+                            }} />
 
                             <Typography variant='body1' color='white'
-                                fontSize={{ xs: "8.5px", md: "12px" }}
+                                fontSize={{ xs: "11px", md: "12px" }}
                             >
                                 App store
                             </Typography>
@@ -160,12 +163,12 @@ const Footer = () => {
                             sx={{ fontSize: { xs: "8.5px", md: "11px" } }}
                         >
 
-                            <>
-                                <BsGooglePlay style={{ marginRight: '10px', fontSize: "16px", color: "white" }} />
-                            </>
+                            <BsGooglePlay style={{
+                                marginRight: '7px', fontSize: "16px", color: "white"
+                            }} />
 
                             <Typography variant='body1' color='white'
-                                fontSize={{ xs: "8.5px", md: "12px" }}
+                                fontSize={{ xs: "11px", md: "12px" }}
                             >
                                 Google play
                             </Typography>
@@ -195,8 +198,8 @@ const Footer = () => {
             }}>
 
                 <Typography variant="body2" sx={{
-                    mt: "10px", fontSize: { xs: "10px", md: "11px", xxl: "12.5px" },
-                    textAlign: "center"
+                    mt: "10px", fontSize: { xs: "11px", md: "12px", xl: "12.5px" },
+                    textAlign: "center", fontWeight: "600"
                 }}>
                     Copyright © 2023, Ecommerce With NextJs
                 </Typography>
@@ -205,9 +208,7 @@ const Footer = () => {
                     <a target="_blank">
                         <Tooltip title='github'>
                             <IconButton color='primary'>
-                                <>
-                                    <FaGithub />
-                                </>
+                                <FaGithub />
                             </IconButton>
                         </Tooltip>
                     </a>

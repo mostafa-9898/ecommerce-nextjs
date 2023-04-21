@@ -5,7 +5,7 @@ import { Box, Rating, Typography } from "@mui/material";
 
 // slider
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
@@ -20,9 +20,10 @@ function CustomersSay() {
             {/* title */}
             <Typography variant="h3"
                 sx={{
-                    fontWeight: "600", mb: '40px',
-                    fontSize: { xs: "25px", md: "35px" }, pb: "10px",
-                    borderBottom: "1px solid #6c757d", width: { xs: "230px", md: "400px" },
+                    fontWeight: "600", mb: '20px',
+                    fontSize: { xs: "22px", md: "32px" }, pb: "10px",
+                    borderBottom: "1px solid #6c757d",
+                    width: { xs: "230px", md: "350px" },
                 }}>
                 What customers say
             </Typography>
@@ -30,7 +31,6 @@ function CustomersSay() {
 
             {/* slider */}
             <Box sx={{
-                // maxWidth: { xs: "370px", md: "600px", xl: "1024px", xxl: "1200px" },
                 minWidth: "330px", cursor: "default", m: "auto",
             }}>
                 <CustomersSlider />
@@ -58,7 +58,11 @@ function CustomersSlider() {
             pagination={{
                 dynamicBullets: true,
             }}
-            modules={[Pagination]}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
         >
 
@@ -67,12 +71,12 @@ function CustomersSlider() {
                     <Box sx={{
                         display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: { xs: "column", md: "row" },
-                        pb: "50px", gap: { xs: "30px", xxl: "70px" }, px: "10px"
+                        pb: "50px", pt: "20px", gap: { xs: "30px", xl: "70px" }, px: "10px"
                     }}>
 
                         {/* picture */}
                         <Box sx={{
-                            width: { xs: "230px", md: "300px", xxl: "320px" },
+                            width: { xs: "230px", md: "300px", xl: "320px" },
                             textAlign: { xs: "center", xl: "start" },
                         }}>
                             <Image src={item.path} alt={item.name}
@@ -89,7 +93,7 @@ function CustomersSlider() {
                             {/* name */}
                             <Typography variant="h5" sx={{
                                 fontWeight: "600", mb: "10px", color: "#e36414",
-                                fontSize: { xs: "15px", md: "20px", xl: "25px" },
+                                fontSize: { xs: "15px", md: "20px" },
                             }}>
                                 {item.name}
                             </Typography>
@@ -107,9 +111,9 @@ function CustomersSlider() {
 
                             {/* descriptions */}
                             <Typography variant="grayText" component="p" sx={{
-                                fontSize: { xs: "11px", md: "12px", xl: "14px" },
-                                mt: "5px", fontWeight: "600",
-                                wordSpacing: "1px", lineHeight: "22px", textAlign: "justify"
+                                fontSize: { xs: "11px", md: "12px", xl: "12.5px" },
+                                mb: "15px", fontWeight: "600", textAlign: "justify",
+                                lineHeight: "20px",
                             }}>
                                 &quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,

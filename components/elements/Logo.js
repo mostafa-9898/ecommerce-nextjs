@@ -11,7 +11,10 @@ function Logo() {
                 color='#998e76'
                 fontWeight={700}
                 fontFamily={"Dancing Script"}
-                sx={{ cursor: "pointer", fontSize: { xs: "23px", md: "27px", xl: "35px", xxl: "40px" } }}
+                sx={{
+                    cursor: "pointer",
+                    fontSize: { xs: "24px", md: "32px", xl: "40px" }
+                }}
             >
                 ecoShop
             </Typography>

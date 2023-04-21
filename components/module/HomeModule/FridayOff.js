@@ -38,36 +38,34 @@ function FridayOff() {
 
                     <Typography variant="body2"
                         sx={{
-                            fontSize: { xs: "12px", md: "14px" },
-                            color: "#dee2e6"
+                            color: "#dee2e6", fontWeight: "600",
+                            fontSize: { xs: "10.5px", md: "11.5px", },
                         }}
                     >
                         LIMITED OFFER
                     </Typography>
 
-                    <Typography variant="h4"
-                        sx={{
-                            fontWeight: "600", color: "white",
-                            fontSize: { xs: "25px", md: "35px", xl: "30px" }
-                        }}
-                    >
+                    <Typography variant="h4" sx={{
+                        fontWeight: "600", color: "white",
+                        fontSize: { xs: "20px", md: "35px", xl: "40px" },
+                    }}>
                         50% off only yhis friday and get special gift !
                     </Typography>
 
                     <Link href='/products'>
-                        <Button variant='contained' color='warning'
-                            sx={{
-                                width: { xs: "110px", md: "130px", xl: "130px" },
-                                height: { xs: "35px", md: "40px", xl: "42px" },
-                                mt: "20px"
+                        <Button variant='contained' color='warning' sx={{
+                            width: { xs: "110px", md: "120px", xl: "130px" },
+                            height: { xs: "32px", md: "37px", xl: "40px" },
+                            mt: "20px"
+                        }}>
+                            <Typography variant='subtitle1' sx={{
+                                color: 'white', fontWeight: "500",
+                                mr: { xs: "4px", md: "5px", xl: "7px" },
+                                fontSize: { xs: "11px", xl: "12px" },
                             }}>
-                            <Typography variant='subtitle1' color='white'
-                                fontWeight={500} fontSize={{ xs: "10px", md: "13px" }}
-                                mr="7px"
-                            >
                                 Grab it now
                             </Typography>
-                            <><HiOutlineArrowRight color="white" /></>
+                            <HiOutlineArrowRight color="white" fontSize={13} />
                         </Button>
                     </Link>
                 </Box>

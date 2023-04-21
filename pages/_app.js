@@ -42,7 +42,11 @@ function MyApp({ Component, pageProps }) {
 
           {hasWindow &&
             <Paper variant='elevation'
-              sx={{ boxShadow: 'none', borderRadius: '0', border: 'none', p: '0px', m: "0px" }}>
+              sx={{
+                boxShadow: 'none', borderRadius: '0',
+                border: 'none', p: '0px', m: "0px"
+              }}>
+
               <NextNProgress
                 color="#29D"
                 startPosition={0.3}
@@ -50,10 +54,12 @@ function MyApp({ Component, pageProps }) {
                 height={3}
                 showOnShallow={true}
               />
+
               <Navbar />
               <Component {...pageProps} />
               <Footer />
               <ScrollToTop />
+
             </Paper>
           }
 

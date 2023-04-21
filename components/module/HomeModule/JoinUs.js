@@ -19,16 +19,17 @@ function JoinUs() {
 
                 {/* title */}
                 <Typography variant="h4" sx={{
-                    fontWeight: "600", fontSize: { xs: "", md: "", xl: "35px" },
-                    mb: "10px", textAlign: "center"
+                    fontWeight: "600",
+                    mb: "10px", textAlign: "center",
+                    fontSize: { xs: "25px", md: "35px" }
                 }}>
                     Subscribe our newsletter to get updates to our latest collections
                 </Typography>
 
                 {/* descriptions 1 */}
                 <Typography variant="grayText" component="p" sx={{
-                    fontSize: { xs: "11px", md: "12px", xl: "14px" },
-                    mb: "15px",
+                    mb: "15px", fontWeight: "500", textAlign: "center",
+                    fontSize: { xs: "11px", md: "12px", xl: "12.5px" },
                 }}>
                     Get 20% off on your first order just by subscribing to our newsletter!
                 </Typography>
@@ -42,20 +43,19 @@ function JoinUs() {
                     <Box>
                         <TextField id="outlined-basic" label="Email Address"
                             variant="outlined" size="small"
-                            InputLabelProps={{ style: { fontSize: "14px" } }}
+                            InputLabelProps={{ style: { fontSize: "13px" } }}
                         />
                     </Box>
 
-                    <Button variant='contained' color='button'
-                        sx={{
-                            width: { xs: "90px", md: "100px", xl: "90px" },
-                            height: { xs: "29px", md: "34px", xl: "38px" }
-                        }}>
+                    <Button variant='contained' color='button' sx={{
+                        width: { xs: "80px", md: "100px", xl: "90px" },
+                        height: "38px",
+                    }}>
 
-                        <Typography variant='subtitle1' color='white'
-                            fontWeight={500}
-                            fontSize={{ xs: "10px", md: "13px" }}
-                        >
+                        <Typography variant='subtitle1' sx={{
+                            color: 'white', fontWeight: "500",
+                            fontSize: { xs: "11px", xl: "12px" },
+                        }}>
                             Subscribe
                         </Typography>
 
@@ -66,7 +66,8 @@ function JoinUs() {
                 {/* descriptions 2 */}
                 <Typography variant="grayText" component="p" sx={{
                     width: "230px", textAlign: "center",
-                    fontSize: "12px",
+                    fontSize: { xs: "10.5px", md: "12px" },
+                    wordSpacing: "0.5px"
                 }}>
                     You will be able to unsubscribe at any time.
                     Read our Privacy Policy

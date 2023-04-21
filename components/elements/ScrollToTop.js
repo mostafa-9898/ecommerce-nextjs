@@ -41,7 +41,8 @@ const UP = () => {
                     <Box onClick={goToTop} sx={{
                         width: "40px", height: "40px", backgroundColor: "#4d7c8a",
                         ":hover": { backgroundColor: "#264653" }, transition: 'all .2s linear',
-                        borderRadius: "5px"
+                        borderRadius: "5px",
+                        display: "flex", alignItems: "center", justifyContent: "center"
                     }}>
                         <IoIosArrowUp style={{
                             fontSize: "40px", color: "white", cursor: "pointer",

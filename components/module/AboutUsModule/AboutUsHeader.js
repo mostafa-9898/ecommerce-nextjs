@@ -11,17 +11,17 @@ function AboutUsHeader() {
     return (
         <Box sx={{
             display: 'flex', alignItems: 'center',
-            justifyContent: 'center', gap: { xs: "30px", xxl: "70px" },
+            justifyContent: 'center', gap: { xs: "30px", xl: "50px" },
             flexDirection: { xs: "column", xl: "row" },
-            pt: "30px", flexWrap: "wrap"
+            pt: "30px",
         }}>
 
             {/* picture */}
             <Box sx={{
-                width: { xs: "100%", xxl: "750px" }
+                width: { xs: "100%", xl: "800px" }
             }}>
                 <Image src={banner} alt='banner'
-                    width={1200} height={800}
+                    width={1200} height={850}
                     style={{ borderRadius: "10px" }}
                 />
             </Box>
@@ -29,24 +29,25 @@ function AboutUsHeader() {
 
             {/* content */}
             <Box sx={{
-                width: { xs: "100%", xxl: "650px" }
+                width: { xs: "100%", xl: "650px" }
             }}>
 
                 {/* title */}
                 <Typography variant="h3"
                     sx={{
                         fontWeight: "600", mb: '20px',
-                        fontSize: { xs: "25px", md: "40px" }, pb: "10px",
-                        borderBottom: "1px solid #6c757d", width: { xs: "170px", md: "260px" },
+                        fontSize: { xs: "22px", md: "32px" }, pb: "10px",
+                        borderBottom: "1px solid #6c757d",
+                        width: { xs: "140px", md: "200px" },
                     }}>
                     Our Story
                 </Typography>
 
                 {/* descriptions 1 */}
                 <Typography variant="grayText" component="p" sx={{
-                    fontSize: { xs: "11px", md: "12px", xl: "14px" },
-                    mb: "15px", fontWeight: "600",
-                    wordSpacing: "2.5px", lineHeight: "22px", textAlign: "justify"
+                    fontSize: { xs: "11px", md: "12px", xl: "12.5px" },
+                    mb: "15px", fontWeight: "600", textAlign: "justify",
+                    lineHeight: "20px",
                 }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -57,9 +58,9 @@ function AboutUsHeader() {
 
                 {/* descriptions 2 */}
                 <Typography variant="grayText" component="p" sx={{
-                    fontSize: { xs: "11px", md: "12px", xl: "14px" },
-                    wordSpacing: "2.5px", lineHeight: "22px", textAlign: "justify",
-                    fontWeight: "600",
+                    fontSize: { xs: "11px", md: "12px", xl: "12.5px" },
+                    mb: "15px", fontWeight: "600", textAlign: "justify",
+                    lineHeight: "20px",
                 }}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,

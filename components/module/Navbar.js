@@ -19,7 +19,7 @@ import {
 // mui
 import {
     Badge, Box, Tooltip, IconButton, Typography,
-    Drawer, List, ListItem, ListItemButton
+    Drawer, List, ListItem, ListItemButton, Divider
 } from "@mui/material";
 
 
@@ -46,13 +46,11 @@ const Navbar = () => {
 
                 {/* responsive menu */}
                 <ResponsiveMenu menu={menu} setMenu={setMenu} router={router} />
-                <Box sx={{ display: { xs: "block", xl: "none" } }}>
-                    <Logo />
-                </Box>
 
 
                 {/* desktop menu */}
                 <DesktopMenu router={router} />
+
 
                 {/* icons */}
                 <Box sx={{
@@ -87,7 +85,7 @@ const Navbar = () => {
                     <Box sx={{
                         display: { xs: "none", xl: "block" }
                     }}>
-                        <Link href='/signUp'>
+                        <Link href='/register'>
                             <Tooltip title='Profile'>
                                 <IconButton
                                     size="large"
@@ -215,11 +213,22 @@ function ResponsiveMenu({ menu, setMenu, router }) {
                     onClick={() => setMenu(false)}
                     onKeyDown={() => setMenu(false)}
                 >
+
+
+                    <List sx={{
+                        width: "100%", height: "50px",
+                        display: 'flex', justifyContent: "center",
+                        alignItems: "center", mt: "20px"
+                    }}>
+                        <Logo />
+                    </List>
+
+
                     <List>
                         <ListItem disablePadding
                             sx={{
                                 display: 'flex', flexDirection: 'column',
-                                width: '100%', mt: '50px'
+                                width: '100%', mt: '20px'
                             }}
                         >
 
@@ -263,26 +272,26 @@ function ResponsiveMenu({ menu, setMenu, router }) {
                                 </ListItemButton>
                             </Link>
 
-                            <Link href='/signUp'>
+                            <Link href='/register'>
                                 <ListItemButton sx={{
                                     display: 'flex', alignItems: 'center',
                                     width: '100%', gap: '15px', pl: "25px", py: "15px",
                                     cursor: "pointer",
                                     backgroundColor: `
-                                    ${router.asPath === '/signUp' ? "#deac7c"
-                                            : router.asPath === '/logIn' ? "#deac7c"
+                                    ${router.asPath === '/register' ? "#deac7c"
+                                            : router.asPath === '/login' ? "#deac7c"
                                                 : ""}
                                     `
                                 }}>
                                     <HiOutlineUser style={{
-                                        color: `${router.asPath === '/signUp' ? "black"
-                                            : router.asPath === '/logIn' ? "black"
+                                        color: `${router.asPath === '/register' ? "black"
+                                            : router.asPath === '/login' ? "black"
                                                 : "primary"}`,
                                         fontSize: "25px"
                                     }} />
                                     <Typography variant="subtitle1"
-                                        color={`${router.asPath === '/signUp' ? "black"
-                                            : router.asPath === '/logIn' ? "black"
+                                        color={`${router.asPath === '/register' ? "black"
+                                            : router.asPath === '/login' ? "black"
                                                 : "primary"}`}
                                         fontWeight={600} px={"6px"}
                                     >
