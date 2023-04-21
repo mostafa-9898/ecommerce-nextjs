@@ -6,7 +6,7 @@ import LoginPage from '../components/template/LoginPage';
 import { Box } from '@mui/material';
 
 
-const LogIn = () => {
+const Login = () => {
     return (
         <Box sx={{
             maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "50px" },
@@ -16,4 +16,4 @@ const LogIn = () => {
     );
 }
 
-export default LogIn;
+export default Login;
