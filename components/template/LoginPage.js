@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 // mui
 import {
-    Box, Button, Checkbox, FormControlLabel,
+    Box, Button,
     TextField, Typography,
 } from '@mui/material';
 
