@@ -39,7 +39,7 @@ function ContactUsForm() {
 
                 {/* form */}
                 <Box component='form' sx={{
-                    gap: '15px', width: { xs: "300px", md: "450px", xl: "600px" },
+                    gap: '15px', width: { xs: "100%", md: "450px", xl: "600px" },
                     display: 'flex', flexDirection: 'column',
                 }}>
                     <TextField

@@ -13,7 +13,7 @@ function Logo() {
                 fontFamily={"Dancing Script"}
                 sx={{
                     cursor: "pointer",
-                    fontSize: { xs: "24px", md: "32px", xl: "40px" }
+                    fontSize: { xs: "30px", md: "35px", xl: "40px" }
                 }}
             >
                 ecoShop
