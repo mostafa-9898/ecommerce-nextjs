@@ -86,7 +86,7 @@ function Category() {
                         more recently with desktop publishing.
                     </Typography>
 
-                    <Link href='/products' passHref legacyBehavior>
+                    <Link href='/products?category=men%27s+clothing' passHref legacyBehavior>
                         <MyBtn />
                     </Link>
 
@@ -137,7 +137,7 @@ function Category() {
                         more recently with desktop publishing.
                     </Typography>
 
-                    <Link href='/products' passHref legacyBehavior>
+                    <Link href='/products?category=women%27s+clothing' passHref legacyBehavior>
                         <MyBtn />
                     </Link>
 
@@ -202,7 +202,7 @@ function Category() {
                         more recently with desktop publishing.
                     </Typography>
 
-                    <Link href='/products' passHref legacyBehavior>
+                    <Link href='/products?category=jewelery' passHref legacyBehavior>
                         <MyBtn />
                     </Link>
 
@@ -252,7 +252,7 @@ function Category() {
                         more recently with desktop publishing.
                     </Typography>
 
-                    <Link href='/products' passHref legacyBehavior>
+                    <Link href='/products?category=electronics' passHref legacyBehavior>
                         <MyBtn />
                     </Link>
 

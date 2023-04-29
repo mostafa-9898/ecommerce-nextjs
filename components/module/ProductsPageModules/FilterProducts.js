@@ -37,7 +37,9 @@ const FilterProducts = () => {
     };
 
     useEffect(() => {
-        if (query.category || query.rate) {
+        if (router.query.category !== query.category || router.query.rate !== query.rate) {
+            setQuery(router.query);
+        } else if (query.category || query.rate) {
             router.replace({
                 pathname: "/products",
                 query

@@ -45,7 +45,7 @@ function ProductsPage({ products }) {
                     {/* load more products button */}
                     {+products.length > cuttedProducts ?
                         <Box sx={{
-                            width: "95%", textAlign: "center",
+                            width: "95%", textAlign: "center", mt: "20px"
                         }}>
                             <Button variant="outlined" onClick={loadMoreHandler}
                                 sx={{ width: "200px" }}
