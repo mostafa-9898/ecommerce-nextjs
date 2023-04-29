@@ -10,8 +10,6 @@ let initialState = {
 if (typeof window !== 'undefined') {
     if (!localStorage.getItem('cart')) {
         localStorage.setItem('cart', JSON.stringify(initialState))
-        const cart = localStorage.getItem('cart')
-        initialState = JSON.parse(cart)
     } else {
         const cart = localStorage.getItem('cart')
         initialState = JSON.parse(cart)
