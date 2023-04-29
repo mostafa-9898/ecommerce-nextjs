@@ -66,7 +66,7 @@ function CardButtons({ product }) {
                         <IconButton size="small"
                             onClick={() => {
                                 dispatch(removeFromCart(product));
-                                notify("Deleted from cart successfully !")
+                                // notify("Deleted from cart successfully !")
                             }}>
                             <MdDeleteOutline style={{
                                 fontSize: '24px',
@@ -110,7 +110,7 @@ function CardButtons({ product }) {
                         color="button"
                         onClick={() => {
                             dispatch(addToCart(product));
-                            notify("Added to cart successfully !")
+                            // notify("Added to cart successfully !")
                         }}
                         sx={{
                             width: "110px", height: "36px",
