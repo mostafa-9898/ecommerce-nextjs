@@ -64,10 +64,7 @@ function CardButtons({ product }) {
                     {/* delete */}
                     {QuantityCount(cartState, product.id) === 1 &&
                         <IconButton size="small"
-                            onClick={() => {
-                                dispatch(removeFromCart(product));
-                                // notify("Deleted from cart successfully !")
-                            }}>
+                            onClick={() => dispatch(removeFromCart(product))}>
                             <MdDeleteOutline style={{
                                 fontSize: '24px',
                             }} />
@@ -108,10 +105,7 @@ function CardButtons({ product }) {
                     {/* add to cart */}
                     <Button size="small" variant="contained"
                         color="button"
-                        onClick={() => {
-                            dispatch(addToCart(product));
-                            // notify("Added to cart successfully !")
-                        }}
+                        onClick={() => dispatch(addToCart(product))}
                         sx={{
                             width: "110px", height: "36px",
                         }}>
