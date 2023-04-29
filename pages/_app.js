@@ -1,8 +1,9 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import '../styles/globals.css'
 
 // mui for backgraound
-import { Box, Container, Paper } from '@mui/material'
+import { Paper } from '@mui/material'
 
 // mui theme
 import { ColorContextProvider } from '../theme/MUI_MODE'
@@ -14,11 +15,10 @@ import ScrollToTop from '../components/elements/ScrollToTop'
 
 // redux
 import { Provider } from 'react-redux'
-import Store from '../redux/store'
+import { store } from '../redux/store'
 
 // progressbar
 import NextNProgress from "nextjs-progressbar";
-import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
 
@@ -38,13 +38,14 @@ function MyApp({ Component, pageProps }) {
 
       </Head>
       <ColorContextProvider>
-        <Provider store={Store}>
+        <Provider store={store}>
 
           {hasWindow &&
             <Paper variant='elevation'
               sx={{
                 boxShadow: 'none', borderRadius: '0',
-                border: 'none', p: '0px', m: "0px"
+                border: 'none', p: '0px', m: "0px",
+                minHeight: "100vh"
               }}>
 
               <NextNProgress

@@ -19,7 +19,7 @@ function Brands() {
                 maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "40px" },
                 py: "20px"
             }}>
-
+                {/* check the below for this component */}
                 <BrandsSlider />
 
             </Box>

@@ -30,6 +30,7 @@ function LoginPage() {
 
     return (
         <Box sx={{
+            maxWidth: '1576px', m: 'auto', px: { xs: "20px", xl: "50px" },
             display: 'flex', alignItems: 'center', pt: "30px",
             justifyContent: 'center', gap: '30px',
             flexDirection: { xs: "row-reverse", md: "row" }

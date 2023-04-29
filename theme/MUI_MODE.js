@@ -52,7 +52,7 @@ export const ColorContextProvider = ({ children }) => {
                 main: '#998e76'
             },
             warning: {
-                main: '#ea7317',
+                main: '#ff8800',
                 dark: "#e36414"
             },
             button: {
@@ -62,10 +62,6 @@ export const ColorContextProvider = ({ children }) => {
             navCart: {
                 main: "#88A47C"
             },
-            productBtn: {
-                main: "#0288d1",
-                dark: "#01579b"
-            }
 
         },
     })

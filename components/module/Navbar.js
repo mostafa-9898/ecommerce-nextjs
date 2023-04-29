@@ -28,9 +28,7 @@ const Navbar = () => {
     const { mode, toggleMode } = useContext(ColorModeContext);
     const [menu, setMenu] = useState();
     const router = useRouter();
-
-    // redux
-    const state = useSelector(state => state);
+    const countOfProduct = useSelector(state => state.cart.totalProcuts);
 
     return (
         <Box sx={{
@@ -44,12 +42,20 @@ const Navbar = () => {
             }}>
 
 
-                {/* responsive menu */}
+                {/* 
+                    responsive menu 
+                    check the below for this component
+                */}
                 <ResponsiveMenu menu={menu} setMenu={setMenu} router={router} />
 
 
-                {/* desktop menu */}
+
+                {/* 
+                    desktop menu 
+                    check the below for this component
+                */}
                 <DesktopMenu router={router} />
+
 
 
                 {/* icons */}
@@ -68,7 +74,7 @@ const Navbar = () => {
                     <Link href='/cart'>
                         <Tooltip title='cart'>
                             <IconButton color="primary" sx={{ px: '12px' }}>
-                                <Badge badgeContent={state.itemsCounter} color="navCart"
+                                <Badge badgeContent={countOfProduct} color="navCart"
                                     sx={{
                                         "& .MuiBadge-badge": {
                                             fontWeight: "600", color: "#EEEEEE"

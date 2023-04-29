@@ -1,9 +1,9 @@
 
 // components
-import AboutUsHeader from '../module/AboutUsModule/AboutUsHeader';
-import LittleBoxes from '../module/AboutUsModule/LittleBoxes';
-import WeChanging from '../module/AboutUsModule/WeChanging';
-import CustomersSay from '../module/AboutUsModule/CustomersSay';
+import AboutUsHeader from '../module/AboutusPageModules/AboutUsHeader';
+import LittleBoxes from '../module/AboutusPageModules/LittleBoxes';
+import WeChanging from '../module/AboutusPageModules/WeChanging';
+import CustomersSay from '../module/AboutusPageModules/CustomersSay';
 
 // mui
 import { Box } from '@mui/material';

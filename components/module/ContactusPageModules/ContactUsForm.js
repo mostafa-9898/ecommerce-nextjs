@@ -70,10 +70,13 @@ function ContactUsForm() {
                         style={{ height: '150px', resize: 'none' }}
                     />
 
-                    <Button variant='contained' color='button' sx={{
-                        fontWeight: "500"
-                    }} >
-                        Send Message
+                    <Button variant='contained' color='button'>
+                        <Typography variant='subtitle1' sx={{
+                            fontWeight: "600",
+                            fontSize: { xs: "12px", md: "12px" },
+                        }}>
+                            Send Message
+                        </Typography>
                     </Button>
                 </Box>
 

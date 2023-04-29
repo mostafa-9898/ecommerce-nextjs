@@ -136,7 +136,8 @@ const Footer = () => {
 
                 {/* inistall App and payment methods */}
                 <Box sx={{
-                    width: "390px", display: 'flex', flexDirection: 'column',
+                    width: "390px", display: 'flex',
+                    flexDirection: 'column',
                 }}>
 
                     {/* install apps */}
@@ -178,8 +179,8 @@ const Footer = () => {
 
                     {/* payment methods */}
                     <Box sx={{
-                        display: 'flex', alignItems: "center", justifyContent: "start",
-                        gap: "7px",
+                        display: 'flex', alignItems: "center",
+                        justifyContent: "start", gap: "7px",
                     }}>
                         <Image src={paypal} alt='paypal' width='100px' height='70px' />
                         <Image src={visa} alt='paypal' width='60px' height='60px' />
@@ -194,7 +195,8 @@ const Footer = () => {
 
             {/* Copyright */}
             <Box sx={{
-                display: "flex", alignItems: "center", justifyContent: "center"
+                display: "flex", alignItems: "center",
+                justifyContent: "center"
             }}>
 
                 <Typography variant="body2" sx={{

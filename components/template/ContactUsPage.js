@@ -1,7 +1,7 @@
 
 // components
-import ContactUsForm from "../module/ContactUsModule/ContactUsForm";
-import ContactUsHeader from "../module/ContactUsModule/ContactUsHeader";
+import ContactUsForm from "../module/ContactusPageModules/ContactUsForm";
+import ContactUsHeader from "../module/ContactusPageModules/ContactUsHeader";
 
 // mui
 import { Box } from "@mui/material";

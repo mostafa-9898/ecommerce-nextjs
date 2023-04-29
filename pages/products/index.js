@@ -1,49 +1,54 @@
-import { useState } from "react";
 import axios from "axios";
 
 // mui
-import { useMediaQuery } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 
 // component
-import ProductCard from "../../components/ProductCard";
-import Sidebar from "../../components/Sidebar";
+import ProductsPage from "../../components/template/ProductsPage";
 
 
 const Products = ({ products }) => {
-
-    const isTablet = useMediaQuery('(max-width:900px)')
-
-    const [dynamicState, setDynamicState] = useState(products)
-
     return (
-        <Box maxWidth='1152px' m='auto' py={`${isTablet ? '5px' : '40px'}`}
-            display='flex' justifyContent='space-between' gap='10px'
-            flexDirection={`${isTablet ? 'column' : 'row'}`}
-        >
-
-            {/* Side bar for filter the products */}
-            <Sidebar setDynamicState={setDynamicState} products={products} />
-
-            {/* Products card */}
-            <Box width='100%' display='flex' flexWrap='wrap'
-                gap='20px' justifyContent={`${isTablet && 'center'}`}>
-                {dynamicState.map(product => <ProductCard key={product.id} product={product} />)}
-            </Box>
-
+        <Box>
+            <ProductsPage products={products} />
         </Box>
     );
 }
-
 export default Products;
 
-export const getServerSideProps = async () => {
-    const result = await axios.get('https://fakestoreapi.com/products')
-    const data = result.data
 
-    return {
-        props: {
-            products: data
+
+export async function getServerSideProps(context) {
+    const { query } = context;
+
+    const result = await axios.get('https://fakestoreapi.com/products');
+    const data = await result.data;
+
+    // filtered data
+    const filteredData = data.filter(item => {
+
+        // category
+        const categoryResult = item.category === query.category;
+
+        // rate
+        const rateResult = item.rating.rate >= +query.rate && item.rating.rate <= +query.rate + 1
+
+        if (query.category && query.rate && categoryResult && rateResult) {
+            return item
+        } else if (query.category && !query.rate && categoryResult) {
+            return item
+        } else if (!query.category && query.rate && rateResult) {
+            return item
+        }
+    });
+
+    if (query.category || query.rate) {
+        return {
+            props: { products: filteredData },
+        }
+    } else if (!query.category && !query.rate) {
+        return {
+            props: { products: data },
         }
     }
 }

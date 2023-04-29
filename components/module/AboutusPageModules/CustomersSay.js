@@ -31,8 +31,9 @@ function CustomersSay() {
 
             {/* slider */}
             <Box sx={{
-                minWidth: "330px", cursor: "default", m: "auto",
+                minWidth: "300px", cursor: "default", m: "auto",
             }}>
+                {/* check the below for this component */}
                 <CustomersSlider />
             </Box>
 
@@ -71,7 +72,8 @@ function CustomersSlider() {
                     <Box sx={{
                         display: "flex", justifyContent: "center", alignItems: "center",
                         flexDirection: { xs: "column", md: "row" },
-                        pb: "50px", pt: "20px", gap: { xs: "30px", xl: "70px" }, px: "10px"
+                        pb: "50px", pt: "20px", px: "10px",
+                        gap: { xs: "30px", xl: "70px" },
                     }}>
 
                         {/* picture */}
