@@ -35,11 +35,13 @@ const FilterProducts = () => {
             query: { category: "", rate: "" }
         })
     };
-
     useEffect(() => {
         if (router.query.category !== query.category || router.query.rate !== query.rate) {
             setQuery(router.query);
-        } else if (query.category || query.rate) {
+        }
+    }, [])
+    useEffect(() => {
+        if (query.category || query.rate) {
             router.replace({
                 pathname: "/products",
                 query
